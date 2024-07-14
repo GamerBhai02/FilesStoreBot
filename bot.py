@@ -359,8 +359,9 @@ async def _banned_usrs(_, m: Message):
     banned_usr_str = ""
     async for banned_user in all_banned_users:
         banned_usr_str += f"**UserID:** `{banned_user['id']}`\n**Ban Duration:** `{banned_user['ban_status']['ban_duration']}`\n**Ban Reason:** `{banned_user['ban_status']['ban_reason']}`\n\n"
+    total_banned_count = await db.total_banned_users_count()
     await m.reply_text(
-        f"**Total Banned Users:** `{await db.total_banned_users_count()}`\n\n{banned_usr_str}",
+        f"**Total Banned Users:** `{total_banned_count}`\n\n{banned_usr_str}",
         quote=True
     )
 
