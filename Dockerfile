@@ -27,9 +27,9 @@ RUN set -ex; \
         && apt-get autoremove \
         && rm -rf /var/lib/apt/lists/*
 
-RUN pip install setuptools wheel yarl multidict
+RUN pip3 install setuptools wheel yarl multidict
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 RUN dpkg-reconfigure locales
 COPY . /app
 
