@@ -28,13 +28,13 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📚 **Library:** [Pyrogram](https://docs.pyrogram.org)
 
-📡 **Hosted on:** [Render](https://render.com)
+📡 **Hosted on:** [Koyeb](https://koyeb.com)
 
 🧑🏻‍💻 **Developer:** @GamerBhai02
 
 👥 **Movie Request Group:** [WWW Movies Link](https://t.me/+ZUyhAwBNBsU0YjA9)
 
-📢 **Movie Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
+📢 **Movie Updates Channel:** [All Movies Link](https://t.me/+QgSl55NlTiI0NDhl)
 """
 	ABOUT_DEV_TEXT = f"""
 🧑🏻‍💻 **Developer:** @GamerBhai02
