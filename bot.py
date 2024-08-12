@@ -4,7 +4,7 @@ import os
 import asyncio
 import traceback
 from binascii import Error
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.errors import UserNotParticipant, FloodWait, QueryIdInvalid
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message, ChatType  # Updated import
 from configs import Config
@@ -89,7 +89,7 @@ async def start(bot: Client, cmd: Message):
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.chat(Config.DB_CHANNEL))
 async def main(bot: Client, message: Message):
 
-    if message.chat.type == ChatType.PRIVATE:  # Use ChatType.PRIVATE
+    if message.chat.type == enums.ChatType.PRIVATE:  # Use ChatType.PRIVATE
 
         await add_user_to_database(bot, message)
 
